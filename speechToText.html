@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Speech to Text</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="speechToText.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="container">
+            <h2>Speech To Text Converter
+            </h2>
+            <div class="language-selector">
+                <label for="languageSelector">Select Language:</label>
+                <select id="languageSelector">
+                    <option value="en-IN">English (India)</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="ja-JP">Japanese</option>
+                    <option value="de-DE">German</option>
+                </select>
+            </div>
+            <div id="result"></div>
+            <div class="buttom-container">
+                <button onclick="startConverting()">
+                    <img src="microphone.png" alt="microphone" width="30px" height="30px" style="filter: brightness(0) invert(1);">                               
+                </button>
+
+                <button onclick="stopConverting()">
+                    <img src="microphone (1).png" alt="microphone" width="32px" height="32px" style="filter: brightness(0) invert(1);">
+                </button>
+
+            </div>
+
+        </div>
+        <script src="speechToText.js"></script>
+    </body>
+</html>
